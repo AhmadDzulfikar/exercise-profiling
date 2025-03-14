@@ -62,6 +62,20 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1741934445954,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
 ```
 
+- Setelah Optimisasi:
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741958919062,8903,HTTP Request,200,,Thread Group 1 1-3,text,true,,5551331,127,10,10,http://localhost:8080/all-student,8859,0,1
+1741958918963,9051,HTTP Request,200,,Thread Group 1 1-2,text,true,,5551331,127,9,9,http://localhost:8080/all-student,9031,0,28
+1741958919360,8658,HTTP Request,200,,Thread Group 1 1-6,text,true,,5551331,127,8,8,http://localhost:8080/all-student,8630,0,1
+1741958919659,8371,HTTP Request,200,,Thread Group 1 1-9,text,true,,5551331,127,7,7,http://localhost:8080/all-student,8325,0,1
+1741958918959,9084,HTTP Request,200,,Thread Group 1 1-1,text,true,,5551331,127,6,6,http://localhost:8080/all-student,8976,0,31
+1741958919461,8611,HTTP Request,200,,Thread Group 1 1-7,text,true,,5551331,127,5,5,http://localhost:8080/all-student,8505,0,1
+1741958919560,8525,HTTP Request,200,,Thread Group 1 1-8,text,true,,5551331,127,4,4,http://localhost:8080/all-student,8505,0,1
+1741958919162,8935,HTTP Request,200,,Thread Group 1 1-4,text,true,,5551331,127,3,3,http://localhost:8080/all-student,8903,0,0
+1741958919260,8842,HTTP Request,200,,Thread Group 1 1-5,text,true,,5551331,127,2,2,http://localhost:8080/all-student,8814,0,1
+1741958919759,8479,HTTP Request,200,,Thread Group 1 1-10,text,true,,5551331,127,1,1,http://localhost:8080/all-student,8464,0,1
+
+
 ### all-student-name test:
 - Sebelum Optimisasi:
 ```
@@ -77,6 +91,20 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1741934137575,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-9,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
 1741934137675,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
 ```
+
+- Setelah Optimisasi:
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741958940006,352,all-student-name,200,,Thread Group 1 1-1,text,true,,311919,132,5,5,http://localhost:8080/all-student-name,347,0,20
+1741958940106,253,all-student-name,200,,Thread Group 1 1-3,text,true,,311919,132,5,5,http://localhost:8080/all-student-name,250,0,0
+1741958940007,360,all-student-name,200,,Thread Group 1 1-2,text,true,,311919,132,3,3,http://localhost:8080/all-student-name,359,0,20
+1741958940208,211,all-student-name,200,,Thread Group 1 1-4,text,true,,311919,132,3,3,http://localhost:8080/all-student-name,211,0,1
+1741958940341,132,all-student-name,200,,Thread Group 1 1-5,text,true,,311919,132,2,2,http://localhost:8080/all-student-name,132,0,1
+1741958940405,123,all-student-name,200,,Thread Group 1 1-6,text,true,,311919,132,2,2,http://localhost:8080/all-student-name,122,0,1
+1741958940507,168,all-student-name,200,,Thread Group 1 1-7,text,true,,311919,132,2,2,http://localhost:8080/all-student-name,167,0,1
+1741958940607,144,all-student-name,200,,Thread Group 1 1-8,text,true,,311919,132,2,2,http://localhost:8080/all-student-name,143,0,1
+1741958940705,134,all-student-name,200,,Thread Group 1 1-9,text,true,,311919,132,2,2,http://localhost:8080/all-student-name,133,0,0
+1741958940804,131,all-student-name,200,,Thread Group 1 1-10,text,true,,311919,132,1,1,http://localhost:8080/all-student-name,131,0,0
+
 ### highest-gpa test:
 - Sebelum Optimisasi:
 ```
@@ -92,6 +120,19 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1741934186289,2,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-9,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,2
 1741934186389,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
 ```
+
+Setelah Optimisasi:
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741958952733,154,highest-gpa,200,,Thread Group 1 1-2,text,true,,270,127,3,3,http://localhost:8080/highest-gpa,150,0,11
+1741958952726,169,highest-gpa,200,,Thread Group 1 1-1,text,true,,270,127,2,2,http://localhost:8080/highest-gpa,168,0,18
+1741958952833,152,highest-gpa,200,,Thread Group 1 1-3,text,true,,270,127,2,2,http://localhost:8080/highest-gpa,152,0,1
+1741958952933,160,highest-gpa,200,,Thread Group 1 1-4,text,true,,270,127,2,2,http://localhost:8080/highest-gpa,160,0,1
+1741958953032,217,highest-gpa,200,,Thread Group 1 1-5,text,true,,270,127,3,3,http://localhost:8080/highest-gpa,217,0,1
+1741958953133,196,highest-gpa,200,,Thread Group 1 1-6,text,true,,270,127,2,2,http://localhost:8080/highest-gpa,196,0,1
+1741958953232,220,highest-gpa,200,,Thread Group 1 1-7,text,true,,270,127,3,3,http://localhost:8080/highest-gpa,220,0,1
+1741958953332,227,highest-gpa,200,,Thread Group 1 1-8,text,true,,270,127,3,3,http://localhost:8080/highest-gpa,227,0,0
+1741958953433,191,highest-gpa,200,,Thread Group 1 1-9,text,true,,270,127,2,2,http://localhost:8080/highest-gpa,191,0,1
+1741958953532,199,highest-gpa,200,,Thread Group 1 1-10,text,true,,270,127,1,1,http://localhost:8080/highest-gpa,199,0,1
 
 ## JMeter Test Via App
 ### all-student Test:
