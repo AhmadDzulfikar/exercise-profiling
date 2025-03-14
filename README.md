@@ -44,3 +44,76 @@ Setelah mendapatkan insight dari testing dan profiling, langkah selanjutnya adal
 - Benchmarking dan Perbandingan: Membandingkan hasil sebelum dan sesudah optimasi untuk melihat peningkatan performa.
 - Pengujian Otomatis: Menjalankan unit test dan regression test untuk memastikan perubahan yang dilakukan tidak merusak fungsionalitas aplikasi.
 - Iterasi Berkala: Melakukan testing dan profiling berulang agar setiap perubahan terbukti meningkatkan performa dan tidak menimbulkan masalah baru.
+
+## JMeter Test via CMD:
+### all-student test
+- Sebelm optimisasi:
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741934445158,5,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-2,text,false,,2631,0,2,2,http://localhost:8080/all-student,0,0,5
+1741934445145,16,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-1,text,false,,2631,0,2,2,http://localhost:8080/all-student,0,0,16
+1741934445259,1,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-3,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,1
+1741934445359,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-4,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
+1741934445456,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-5,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
+1741934445554,1,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-6,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,1
+1741934445655,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-7,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
+1741934445755,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-8,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
+1741934445855,1,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-9,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,1
+1741934445954,2,HTTP Request,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/all-student,0,0,2
+```
+
+### all-student-name test:
+- Sebelum Optimisasi:
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741934136883,22,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-1,text,false,,2631,0,2,2,http://localhost:8080/all-student-name,0,0,21
+1741934136884,22,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-2,text,false,,2631,0,2,2,http://localhost:8080/all-student-name,0,0,21
+1741934136982,1,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-3,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,1
+1741934137080,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-4,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
+1741934137180,1,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-5,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,1
+1741934137278,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-6,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
+1741934137376,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-7,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
+1741934137477,1,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-8,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,1
+1741934137575,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-9,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
+1741934137675,2,all-student-name,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/all-student-name,0,0,2
+```
+### highest-gpa test:
+- Sebelum Optimisasi:
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1741934185576,15,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-1,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,15
+1741934185603,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-2,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+1741934185704,3,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-3,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,3
+1741934185802,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-4,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+1741934185890,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-5,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+1741934185990,2,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-6,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+1741934186090,2,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-7,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,2
+1741934186191,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-8,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+1741934186289,2,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-9,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,2
+1741934186389,1,highest-gpa,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Thread Group 1 1-10,text,false,,2631,0,1,1,http://localhost:8080/highest-gpa,0,0,1
+```
+
+## JMeter Test Via App
+### all-student Test:
+- Sebelum Optimisasi:
+![image](https://github.com/user-attachments/assets/eb44b7fd-21b8-4cc7-a79d-4abb174c8acb)
+- Setelah Optimisasi:
+![image](https://github.com/user-attachments/assets/0685754f-7635-499e-b97b-53b4a7de6d19)
+
+### all-student-name Test:
+- Sebelum Optimisasi:
+![image](https://github.com/user-attachments/assets/0fee05bf-b379-4f28-9213-9bf12bb4083b)
+
+- Setelah Optimisasi:
+![image](https://github.com/user-attachments/assets/3ef7c392-f478-4520-8ea8-66715d169c31)
+
+### highest-gpa Test:
+- Sebelum Optimisasi:
+![image](https://github.com/user-attachments/assets/1db41a32-d4f4-4a94-a512-732a284f2969)
+
+
+- Setelah Optimisasi:
+![image](https://github.com/user-attachments/assets/ff914446-0791-408c-848a-0a3e5104cd64)
+
+
+
